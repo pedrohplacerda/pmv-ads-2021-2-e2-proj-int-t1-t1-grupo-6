@@ -11,7 +11,7 @@ import puc.minas.demo.repository.ProdutoRepository;
 
 @RestController
 @RequestMapping("/produto")
-@EntityScan(basePackages = "cup.gestor.gestordevendas.model")
+@EntityScan(basePackages = "puc.minas.demo.model")
 public class ProdutoController {
 
     @Autowired
