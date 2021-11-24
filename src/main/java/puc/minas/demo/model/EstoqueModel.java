@@ -1,4 +1,4 @@
-package com.sample;
+package puc.minas.demo.model;
 
 
 import lombok.AllArgsConstructor;
