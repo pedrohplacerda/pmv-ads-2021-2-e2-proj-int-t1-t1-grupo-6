@@ -56,7 +56,7 @@ public class UsuarioModel {
     }
 
 
-    public double getIdUsuario() {
+    public Double getIdUsuario() {
         return idUsuario;
     }
 

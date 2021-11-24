@@ -36,7 +36,7 @@ public class ProdutoModel {
     }
 
 
-    public double getPrecoProduto() {
+    public Double getPrecoProduto() {
         return precoProduto;
     }
 
