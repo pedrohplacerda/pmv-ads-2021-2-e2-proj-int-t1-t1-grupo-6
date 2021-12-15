@@ -1,0 +1,40 @@
+﻿@page
+@model ProjetoPUC.Pages.Produtos.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<h1>Excluir Produto</h1>
+<hr />
+<div>
+    <br />
+    <h4>Tem certeza que deseja excluir?</h4>
+    <br />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produto.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produto.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produto.Quantidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produto.Quantidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produto.Preco)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produto.Preco)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Produto.Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a class="a-voltar" asp-page="../Index">Voltar para o estoque</a>
+    </form>
+</div>

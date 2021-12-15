@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Estoque";
+}
+
+
+<a asp-page="/Produtos/Create" class="btn btn-info">
+    Cadastrar produto
+</a>
+
+<br />
+<br />
+<br />
+    
+<div class="row">
+    <div class="col-12">
+        <div id="Produtos" class="card mb-2 card-body">
+            <table class="table-striped" data-search="true" id="GridProdutos" data-pagination="true" data-page-size="10" data-page-list="[10, 20, 50, 100, all]">
+                <thead>
+                    <tr>
+                        <th data-field="Nome" data-align="center" data-sortable="true">Nome</th>
+                        <th data-field="Quantidade" data-align="center" data-sortable="true">Quantidade</th>
+                        <th data-field="Preco" data-align="center" data-sortable="true">Preço</th>
+                        <th data-field="Id" data-align="center" data-formatter="formatarAcao">Ações</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#GridProdutos').bootstrapTable({
+                data: @Html.Raw(JsonConvert.SerializeObject(Model.Produtos
+                        .Select(p =>
+                        new
+                        {
+                            Nome = p.Nome,
+                            Quantidade = p.Quantidade,
+                            Preco = "R$ " + p.Preco,
+                            Id = p.Id,
+                        })))
+			});
+        });
+
+        function formatarAcao(value, row, index) {
+            var botaoEditar = `<a href="/Produtos/Edit?id=${row.Id}" class="btn btn-primary">Editar</a>`;
+
+            var botaoDeletar = `<a href="/Produtos/Delete?id=${row.Id}" class="btn botao-deletar">Deletar</a>`;
+
+            return botaoEditar + botaoDeletar;
+        }
+
+    </script>
+}
