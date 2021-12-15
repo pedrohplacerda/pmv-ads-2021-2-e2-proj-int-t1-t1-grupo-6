@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/bootstraptable/bootstrap-table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="corpo">
+            <header>
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-4">
+                    <div class="container">
+                        <a href="/"><i class="fa fa-home" style="font-size: 40px;"></i></a>
+                        <h1 style="margin:auto">Gerenciador de Estoque</h1>
+                    </div>
+                </nav>
+            </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - Gerenciador de Estoque
+            </div>
+        </footer>
+    </div>
+
+    <div id="loading" style="display:none;position:fixed;top:50vh;width:100%;z-index:9999;">
+        <div class="text-center">
+            <div class="spinner-border text-primary" style="height:10vh;width:10vh;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/swal/sweetalert.min.js"></script>
+    <script src="~/lib/bootstraptable/bootstrap-table.min.js"></script>
+    <script src="~/lib/bootstraptable/locale/bootstrap-table-pt-BR.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
