@@ -1,46 +1,34 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Cada dia, a automação e organização tem se tornado um dos ativos mais importantes em empresas e instituições. Tem se buscado a todo tempo simplificar e deixar mais dinâmico o modo em que as empresas operam.
+
+Tendo isso posto, é nítida a necessidade de consumir bens e serviços de maneira mais  democrática, dinâmica e segura, sem precisar se preocupar tanto com pequenos impasses, podendo desfrutar de produtos de qualidade e de alta eficiência.
+
+Com isso em voga, torna-se necessário a elaboração de sites e aplicações seguras e ágeis nos quais os consumidores podem utilizar sem preocupações.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Administrar um negócio de maneira eficiente não é uma tarefa fácil. Para isso, o controle de estoque é muito importante. De fato, um dos grandes problemas das pequenas empresas é a falta de automação nos processos de gestão. A missão deste projeto é construir uma aplicação de gestão de estoque de fácil acesso, intuitiva e dinâmica, de forma a ser de grande eficácia para gestão de uma empresa.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Podemos destacar alguns objetivos específicos:
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+* Fornecer ferramentas que permitam ao usuário autocontrole quanto às suas mercadorias e as finanças relacionadas a elas.
+* Eliminar tarefas manuais, deixando-as automatizadas e práticas.
+* Disponibilizar  um sistema eficaz que promova autocontrole de estoque
+
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo principal desta aplicação é gerenciar o estoque de produtos eletrônicos de um comércio digital, por meio de um banco de dados que contenha todas sa informações pertinentes de cada produto e um sistema de inserção, deleção e consulta ao mesmo.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+É improvável que uma empresa com pouco ou nenhum controle sobre seu estoque alcance a estabilidade necessária para ter sucesso no mercado. Isso ocorre porque abandonar essa parte do negócio tem grandes chances de que algo, em todo o processo de vendas, não funcione corretamente.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Esta falha afetará a qualidade do produto vendido e incorrerá em despesas adicionais para a empresa. Por exemplo, se uma instalação não planejar bem, pode exigir que os fornecedores forneçam muito mais matérias-primas ou itens do que o necessário para ocupar involuntariamente espaço em seu depósito.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Com base nesses relatos, fica evidente que é importante planejar melhor as finanças, distribuição, e gestão de mercadorias, melhorando assim as chances de ascensão do comércio.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Sendo uma programação que permite finitos controles sobre gestão de vendas, o principal público são comerciantes que possuem um site para vender seus produtos eletrônicos, para que possam ter acesso a uma gestão mais bem elaborada e automática.
